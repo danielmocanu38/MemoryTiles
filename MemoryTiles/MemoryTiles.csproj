@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="images\**" />
+    <EmbeddedResource Remove="images\**" />
+    <None Remove="images\**" />
+    <Page Remove="images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="resources\images\User_images\annie.jpg" />
+    <None Remove="resources\images\User_images\armin.jpg" />
+    <None Remove="resources\images\User_images\eren.jpg" />
+    <None Remove="resources\images\User_images\erwin.jpg" />
+    <None Remove="resources\images\User_images\hange.jpg" />
+    <None Remove="resources\images\User_images\levi.jpg" />
+    <None Remove="resources\images\User_images\mikasa.jpg" />
+    <None Remove="resources\images\User_images\mikasa2.jpg" />
+    <None Remove="resources\images\User_images\reiner.jpg" />
+    <None Remove="resources\images\User_images\sasha.jpg" />
+    <None Remove="resources\images\User_images\sasha2.jpg" />
+    <None Remove="resources\images\User_images\zeke.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\images\User_images\sasha2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\images\User_images\annie.jpg" />
+    <Resource Include="resources\images\User_images\armin.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="resources\images\User_images\eren.jpg" />
+    <Resource Include="resources\images\User_images\erwin.jpg" />
+    <Resource Include="resources\images\User_images\hange.jpg" />
+    <Resource Include="resources\images\User_images\levi.jpg" />
+    <Resource Include="resources\images\User_images\mikasa.jpg" />
+    <Resource Include="resources\images\User_images\mikasa2.jpg" />
+    <Resource Include="resources\images\User_images\reiner.jpg" />
+    <Resource Include="resources\images\User_images\sasha.jpg" />
+    <Resource Include="resources\images\User_images\zeke.jpg" />
+  </ItemGroup>
+
+</Project>
